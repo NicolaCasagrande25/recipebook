@@ -29,36 +29,36 @@ Editing the recipe required to insert information in some providers, this inform
 Adapting the information to different screen sizes is not very easy, code in Flutter becomes very long and full of conditions, for this reason I opted for creating different classes for the different device sizes. This approach requires to copy paste a lot of code, which is not a good practice. However, neither having a lot of conditions in the code nor having a lot of classes which contain similar code seems to be a good solution to me.
 
 ### list of dependencies and their versions (from pubspec.yaml)
-dependencies:
-  flutter:
-    sdk: flutter
-  cupertino_icons: ^1.0.2
-  http: ^1.1.0
-  flutter_riverpod: ^2.4.5
-  go_router: ^12.0.1
-  firebase_core: ^2.22.0
-  firebase_auth: ^4.1.0
-  cloud_firestore: ^4.13.1
-  google_fonts: ^6.1.0
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-    flutter_lints: ^2.0.0
-
-
+dependencies:  
+  flutter:  
+    sdk: flutter  
+  cupertino_icons: ^1.0.2  
+  http: ^1.1.0  
+  flutter_riverpod: ^2.4.5  
+  go_router: ^12.0.1  
+  firebase_core: ^2.22.0  
+  firebase_auth: ^4.1.0  
+  cloud_firestore: ^4.13.1  
+  google_fonts: ^6.1.0  
+  
+dev_dependencies:  
+  flutter_test:  
+    sdk: flutter  
+    flutter_lints: ^2.0.0  
+  
+  
 ### database structure 
-/categories
-id: string
-name: string
-
-/recipes
-id: string
-name: string
-creatorId: string
-description: string
-categories: array of strings
-likedBy: array of strings
-likes: number
-ingredients: array of map (name: string, quantity: number, unit: string)
-steps: array of map (title: string, description: string)
+/categories  
+id: string  
+name: string  
+  
+/recipes  
+id: string  
+name: string  
+creatorId: string  
+description: string  
+categories: array of strings  
+likedBy: array of strings  
+likes: number  
+ingredients: array of map (name: string, quantity: number, unit: string)  
+steps: array of map (title: string, description: string)  
